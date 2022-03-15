@@ -1,0 +1,344 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel mode22 add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN receipt_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receipt_no}  r-vertical-field" 
+	data-fieldname="receipt_no" 
+	data-signal-error-for="receipt_no{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="receipt_no" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_receipt_no}">
+		{BEGIN receipt_no_label}{$label mode22 receipt_no }{END receipt_no_label}
+	</label>
+	<div class="r-edit-field">
+		{$receipt_no_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="receipt_no">
+		<div class="text-muted" >
+		{$tooltip mode22 receipt_no }		</div>
+	</div>
+</div>
+
+
+{END receipt_no_fieldblock}
+											
+{BEGIN receiver_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receiver_id}  r-vertical-field" 
+	data-fieldname="receiver_id" 
+	data-signal-error-for="receiver_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="receiver_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_receiver_id}">
+		{BEGIN receiver_id_label}{$label mode22 receiver_id }{END receiver_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$receiver_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="receiver_id">
+		<div class="text-muted" >
+		{$tooltip mode22 receiver_id }		</div>
+	</div>
+</div>
+
+
+{END receiver_id_fieldblock}
+											
+{BEGIN asset_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_asset_id}  r-vertical-field" 
+	data-fieldname="asset_id" 
+	data-signal-error-for="asset_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="asset_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_asset_id}">
+		{BEGIN asset_id_label}{$label mode22 asset_id }{END asset_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$asset_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="asset_id">
+		<div class="text-muted" >
+		{$tooltip mode22 asset_id }		</div>
+	</div>
+</div>
+
+
+{END asset_id_fieldblock}
+											
+{BEGIN request_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_request_id}  r-vertical-field" 
+	data-fieldname="request_id" 
+	data-signal-error-for="request_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="request_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_request_id}">
+		{BEGIN request_id_label}{$label mode22 request_id }{END request_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$request_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="request_id">
+		<div class="text-muted" >
+		{$tooltip mode22 request_id }		</div>
+	</div>
+</div>
+
+
+{END request_id_fieldblock}
+											
+{BEGIN model_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_model}  r-vertical-field" 
+	data-fieldname="model" 
+	data-signal-error-for="model{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="model" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_model}">
+		{BEGIN model_label}{$label mode22 model }{END model_label}
+	</label>
+	<div class="r-edit-field">
+		{$model_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="model">
+		<div class="text-muted" >
+		{$tooltip mode22 model }		</div>
+	</div>
+</div>
+
+
+{END model_fieldblock}
+											
+{BEGIN quantity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_quantity}  r-vertical-field" 
+	data-fieldname="quantity" 
+	data-signal-error-for="quantity{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="quantity" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_quantity}">
+		{BEGIN quantity_label}{$label mode22 quantity }{END quantity_label}
+	</label>
+	<div class="r-edit-field">
+		{$quantity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="quantity">
+		<div class="text-muted" >
+		{$tooltip mode22 quantity }		</div>
+	</div>
+</div>
+
+
+{END quantity_fieldblock}
+											
+{BEGIN issued_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_issued_date}  r-vertical-field" 
+	data-fieldname="issued_date" 
+	data-signal-error-for="issued_date{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="issued_date" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_issued_date}">
+		{BEGIN issued_date_label}{$label mode22 issued_date }{END issued_date_label}
+	</label>
+	<div class="r-edit-field">
+		{$issued_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="issued_date">
+		<div class="text-muted" >
+		{$tooltip mode22 issued_date }		</div>
+	</div>
+</div>
+
+
+{END issued_date_fieldblock}
+											
+{BEGIN ea_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ea_id}  r-vertical-field" 
+	data-fieldname="ea_id" 
+	data-signal-error-for="ea_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="ea_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ea_id}">
+		{BEGIN ea_id_label}{$label mode22 ea_id }{END ea_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$ea_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ea_id">
+		<div class="text-muted" >
+		{$tooltip mode22 ea_id }		</div>
+	</div>
+</div>
+
+
+{END ea_id_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

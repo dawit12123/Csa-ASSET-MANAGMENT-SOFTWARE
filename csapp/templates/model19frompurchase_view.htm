@@ -1,0 +1,633 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel model19frompurchase view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN photo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_photo}  r-vertical-field" data-fieldname="photo" data-signal-error-for="photo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="photo" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_photo}">
+		
+		{BEGIN photo_label}{$label model19frompurchase photo }{END photo_label}
+	</label>
+	<div class="" >
+		{$photo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END photo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN receipt_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receipt_no}  r-vertical-field" data-fieldname="receipt_no" data-signal-error-for="receipt_no{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="receipt_no" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_receipt_no}">
+		
+		{BEGIN receipt_no_label}{$label model19frompurchase receipt_no }{END receipt_no_label}
+	</label>
+	<div class="" >
+		{$receipt_no_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END receipt_no_fieldblock}
+											
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label model19frompurchase id }{END id_label}
+	</label>
+	<div class="" >
+		{$id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN as_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_as_name}  r-vertical-field" data-fieldname="as_name" data-signal-error-for="as_name{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="as_name" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_as_name}">
+		
+		{BEGIN as_name_label}{$label model19frompurchase as_name }{END as_name_label}
+	</label>
+	<div class="" >
+		{$as_name_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END as_name_fieldblock}
+											
+{BEGIN model_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_model}  r-vertical-field" data-fieldname="model" data-signal-error-for="model{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="model" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_model}">
+		
+		{BEGIN model_label}{$label model19frompurchase model }{END model_label}
+	</label>
+	<div class="" >
+		{$model_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END model_fieldblock}
+											
+{BEGIN serial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_serial}  r-vertical-field" data-fieldname="serial" data-signal-error-for="serial{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="serial" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_serial}">
+		
+		{BEGIN serial_label}{$label model19frompurchase serial }{END serial_label}
+	</label>
+	<div class="" >
+		{$serial_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END serial_fieldblock}
+											
+{BEGIN supplier_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_supplier_id}  r-vertical-field" data-fieldname="supplier_id" data-signal-error-for="supplier_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="supplier_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_supplier_id}">
+		
+		{BEGIN supplier_id_label}{$label model19frompurchase supplier_id }{END supplier_id_label}
+	</label>
+	<div class="" >
+		{$supplier_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END supplier_id_fieldblock}
+											
+{BEGIN category_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category_id}  r-vertical-field" data-fieldname="category_id" data-signal-error-for="category_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="category_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_category_id}">
+		
+		{BEGIN category_id_label}{$label model19frompurchase category_id }{END category_id_label}
+	</label>
+	<div class="" >
+		{$category_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END category_id_fieldblock}
+											
+{BEGIN purchased_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_purchased_date}  r-vertical-field" data-fieldname="purchased_date" data-signal-error-for="purchased_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="purchased_date" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_purchased_date}">
+		
+		{BEGIN purchased_date_label}{$label model19frompurchase purchased_date }{END purchased_date_label}
+	</label>
+	<div class="" >
+		{$purchased_date_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END purchased_date_fieldblock}
+											
+{BEGIN received_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_received_date}  r-vertical-field" data-fieldname="received_date" data-signal-error-for="received_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="received_date" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_received_date}">
+		
+		{BEGIN received_date_label}{$label model19frompurchase received_date }{END received_date_label}
+	</label>
+	<div class="" >
+		{$received_date_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END received_date_fieldblock}
+											
+{BEGIN donor_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donor_id}  r-vertical-field" data-fieldname="donor_id" data-signal-error-for="donor_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="donor_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_donor_id}">
+		
+		{BEGIN donor_id_label}{$label model19frompurchase donor_id }{END donor_id_label}
+	</label>
+	<div class="" >
+		{$donor_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END donor_id_fieldblock}
+											
+{BEGIN receiver_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receiver_id}  r-vertical-field" data-fieldname="receiver_id" data-signal-error-for="receiver_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="receiver_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_receiver_id}">
+		
+		{BEGIN receiver_id_label}{$label model19frompurchase receiver_id }{END receiver_id_label}
+	</label>
+	<div class="" >
+		{$receiver_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END receiver_id_fieldblock}
+											
+{BEGIN manufacturer_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manufacturer}  r-vertical-field" data-fieldname="manufacturer" data-signal-error-for="manufacturer{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="manufacturer" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_manufacturer}">
+		
+		{BEGIN manufacturer_label}{$label model19frompurchase manufacturer }{END manufacturer_label}
+	</label>
+	<div class="" >
+		{$manufacturer_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END manufacturer_fieldblock}
+											
+{BEGIN manufactured_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manufactured_date}  r-vertical-field" data-fieldname="manufactured_date" data-signal-error-for="manufactured_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="manufactured_date" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_manufactured_date}">
+		
+		{BEGIN manufactured_date_label}{$label model19frompurchase manufactured_date }{END manufactured_date_label}
+	</label>
+	<div class="" >
+		{$manufactured_date_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END manufactured_date_fieldblock}
+											
+{BEGIN price_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_price}  r-vertical-field" data-fieldname="price" data-signal-error-for="price{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="price" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_price}">
+		
+		{BEGIN price_label}{$label model19frompurchase price }{END price_label}
+	</label>
+	<div class="" >
+		{$price_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END price_fieldblock}
+											
+{BEGIN type_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_type_id}  r-vertical-field" data-fieldname="type_id" data-signal-error-for="type_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="type_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_type_id}">
+		
+		{BEGIN type_id_label}{$label model19frompurchase type_id }{END type_id_label}
+	</label>
+	<div class="" >
+		{$type_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END type_id_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+																</tbody></table>
+				
+{BEGIN details_employee}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption employee }				
+							<span>
+					{$detailslButtons_employee}
+																				</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_employee}
+		</div>
+	</div>
+</div>
+{END details_employee}
+	
+				 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN seen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_seen}  r-vertical-field" data-fieldname="seen" data-signal-error-for="seen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="seen" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_seen}">
+		
+		{BEGIN seen_label}{$label model19frompurchase seen }{END seen_label}
+	</label>
+	<div class="" >
+		{$seen_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END seen_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+			 
+																
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN level_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_level}  r-vertical-field" data-fieldname="level" data-signal-error-for="level{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="level" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_level}">
+		
+		{BEGIN level_label}{$label model19frompurchase level }{END level_label}
+	</label>
+	<div class="" >
+		{$level_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END level_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$edit_page_button_attrs}  title="" >
+				
+		{mlang_message EDIT}		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

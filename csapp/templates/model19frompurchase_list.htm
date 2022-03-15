@@ -1,0 +1,1141 @@
+<!doctype html>
+<html  {$html_attrs}>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {$pagetitle}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base href="{$projectPath}">
+    <link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+    {BEGIN rtlCSS}
+      <link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <link REL="stylesheet" href="{$stylepath}" type="text/css">
+    {END styleCSSFiles}
+  </head>
+  <BODY class="{$stylename} function-list" {$bodyattrs}>
+<div id="Layer1-overlay"></div>
+    {BEGIN body}
+      <style>
+        {$containerCss}
+      </style>
+      <DIV class="r-vbar-page">
+        <DIV data-width data-fixed class="r-left clearfix {$leftbar_class}">
+          <div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+            {BEGIN left_block}
+              <DIV data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix r-ori-vert" data-itemid="logo1" {$item_logo1}>
+                {BEGIN logo_block}
+                  <A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+                    {$logo}
+                  </A>
+                {END logo_block}
+                <BUTTON data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">
+                  <SPAN class="sr-only">
+                    Toggle navigation
+                  </span>
+                  <SPAN class="icon-bar">
+                  </span>
+                </button>
+              </div>
+              <DIV data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix r-ori-vert" data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+                {$menu main}
+              </div>
+              <DIV class="clearfix r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel">
+                <!-- Begin Search panel content -->
+                <DIV class="searchOptions panel panel-primary searchPanelContainer" {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}">
+                  <DIV class="panel-heading">
+                    <DIV class="btn-group" id="addSearchFieldButton{$id}">
+                      <BUTTON id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {mlang_message SEARCH_IN}
+                        <SPAN class="caret">
+                        </span>
+                      </button>
+                    </div>
+                    <DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+                      <BUTTON type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <SPAN class="glyphicon glyphicon glyphicon-option-vertical">
+                        </span>
+                      </button>
+                      <UL class="dropdown-menu dropdown-left">
+                        <li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}>
+                          <a>
+                            {mlang_message SEARCH_SHOW_OPTIONS_BUTTON}
+                          </a>
+                        </li>
+                        <LI role="separator" class="divider">
+                        </li>
+                        <LI class="srchCritTop" style="display: none;">
+                          <a>
+                            <input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}>
+                            <label for="radioAll">
+                              <SPAN class="glyphicon">
+                                &nbsp;
+                              </span>
+                              {mlang_message SEARCH_ALL_CONDITIONS}
+                            </label>
+                          </a>
+                        </li>
+                        <LI class="srchCritTop" style="display: none;">
+                          <a>
+                            <input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}>
+                            <label for="radioAny">
+                              <SPAN class="glyphicon">
+                                &nbsp;
+                              </span>
+                              {mlang_message SEARCH_ANY_CONDITIONS}
+                            </label>
+                          </a>
+                        </li>
+                        <LI role="separator" class="divider">
+                        </li>
+                        <li>
+                          <A class="close-button">
+                            <SPAN class="glyphicon glyphicon-remove">
+                              &nbsp;
+                            </span>
+                            {mlang_message HIDE}
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+                    {BEGIN searchCtrlBlock}
+                      <DIV class="srchPanelRow form-group" {$filterRow_attrs}>
+                        <label>
+                          {$fLabel}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock}
+                    {BEGIN searchCtrlBlock_photo}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_photo}" {$filterRow_attrs_photo}>
+                        <label>
+                          {$label model19frompurchase photo}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_photo}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_photo}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_photo}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_photo}
+                    {BEGIN searchCtrlBlock_as_name}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_as_name}" {$filterRow_attrs_as_name}>
+                        <label>
+                          {$label model19frompurchase as_name}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_as_name}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_as_name}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_as_name}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_as_name}
+                    {BEGIN searchCtrlBlock_supplier_id}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_supplier_id}" {$filterRow_attrs_supplier_id}>
+                        <label>
+                          {$label model19frompurchase supplier_id}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_supplier_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_supplier_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_supplier_id}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_supplier_id}
+                    {BEGIN searchCtrlBlock_serial}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_serial}" {$filterRow_attrs_serial}>
+                        <label>
+                          {$label model19frompurchase serial}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_serial}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_serial}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_serial}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_serial}
+                    {BEGIN searchCtrlBlock_receiver_id}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_receiver_id}" {$filterRow_attrs_receiver_id}>
+                        <label>
+                          {$label model19frompurchase receiver_id}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_receiver_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_receiver_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_receiver_id}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_receiver_id}
+                    {BEGIN searchCtrlBlock_received_date}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_received_date}" {$filterRow_attrs_received_date}>
+                        <label>
+                          {$label model19frompurchase received_date}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_received_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_received_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_received_date}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_received_date}
+                    {BEGIN searchCtrlBlock_purchased_date}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_purchased_date}" {$filterRow_attrs_purchased_date}>
+                        <label>
+                          {$label model19frompurchase purchased_date}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_purchased_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_purchased_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_purchased_date}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_purchased_date}
+                    {BEGIN searchCtrlBlock_model}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_model}" {$filterRow_attrs_model}>
+                        <label>
+                          {$label model19frompurchase model}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_model}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_model}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_model}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_model}
+                    {BEGIN searchCtrlBlock_manufacturer}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_manufacturer}" {$filterRow_attrs_manufacturer}>
+                        <label>
+                          {$label model19frompurchase manufacturer}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_manufacturer}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_manufacturer}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_manufacturer}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_manufacturer}
+                    {BEGIN searchCtrlBlock_manufactured_date}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_manufactured_date}" {$filterRow_attrs_manufactured_date}>
+                        <label>
+                          {$label model19frompurchase manufactured_date}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_manufactured_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_manufactured_date}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_manufactured_date}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_manufactured_date}
+                    {BEGIN searchCtrlBlock_id}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_id}" {$filterRow_attrs_id}>
+                        <label>
+                          {$label model19frompurchase id}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_id}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_id}
+                    {BEGIN searchCtrlBlock_donor_id}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_donor_id}" {$filterRow_attrs_donor_id}>
+                        <label>
+                          {$label model19frompurchase donor_id}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_donor_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_donor_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_donor_id}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_donor_id}
+                    {BEGIN searchCtrlBlock_category_id}
+                      <DIV class="form-group srchPanelRow {$filterRow_class_category_id}" {$filterRow_attrs_category_id}>
+                        <label>
+                          {$label model19frompurchase category_id}
+                        </label>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype_category_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol_category_id}
+                        </span>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1_category_id}
+                        </span>
+                      </div>
+                    {END searchCtrlBlock_category_id}
+                  </div>
+                  <DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+                    <BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>
+                      {mlang_message SEARCH}
+                    </button>
+                    <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+                      {mlang_message SHOW_ALL}
+                    </button>
+                  </div>
+                </div>
+                <!-- End Search panel content -->
+              </div>
+            {END left_block}
+          </div>
+        </div>
+        <DIV class="r-content-col" data-resize-left="leftbar">
+          <DIV class="r-topheader" data-resize-name="topbar">
+            {BEGIN supertop_block}
+              <NAV class="navbar navbar-default" data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}">
+                <SPAN class="navbar-form navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button">
+                  <span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+                    <A type="button" title="Collapse" class="btn-link glyphicon glyphicon-triangle-left" href="#">
+                    </a>
+                  </span>
+                </span>
+                <SPAN class="navbar-form navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb">
+                  {BEGIN breadcrumb}
+                    <OL class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+                      <li >
+                        <a href="{$crumb_home_link}">
+                          <SPAN class="glyphicon glyphicon-home">
+                          </span>
+                        </a>
+                        {$crumb_dropdown}
+                      </li>
+                      {BEGIN crumb}
+                        <LI class="{$crumb_item_class}">
+                          {BEGIN crumb_title_link}
+                            <a {$crumb_attrs}>
+                              {$crumb_title}
+                            </a>
+                          {END crumb_title_link}
+                          {BEGIN crumb_title_span}
+                            <span {$crumb_attrs}>
+                              {$crumb_title}
+                            </span>
+                          {END crumb_title_span}
+                          {$crumb_dropdown}
+                        </li>
+                      {END crumb}
+                    </ol>
+                  {END breadcrumb}
+                </span>
+                <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search">
+                  <SPAN data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+                    <DIV class="input-group">
+                      {BEGIN searchform_text}
+                        <INPUT type="search" class="form-control" {$searchfor_attrs} size="25">
+                      {END searchform_text}
+                      <SPAN class="input-group-btn">
+                        {BEGIN searchform_showall}
+                          <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="{mlang_message SHOW_ALL}">
+                            <SPAN class="glyphicon glyphicon-remove">
+                            </span>
+                          </button>
+                        {END searchform_showall}
+                        {BEGIN searchform_search}
+                          <BUTTON {$searchbutton_attrs} class="btn btn-primary">
+                            <SPAN class="glyphicon glyphicon-search">
+                            </span>
+                          </button>
+                        {END searchform_search}
+                      </span>
+                    </div>
+                  </span>
+                </span>
+                <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options">
+                  <span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+                    <SPAN class="dropdown">
+                      <BUTTON type="button" title class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <SPAN class="glyphicon glyphicon-cog">
+                        </span>
+                        <SPAN class="caret">
+                        </span>
+                      </button>
+                      <UL class="dropdown-menu">
+                        {BEGIN exportselected_link}
+                          <li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+                            <a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+                              {mlang_message EXPORT_SELECTED}
+                            </a>
+                          </li>
+                        {END exportselected_link}
+                        {BEGIN deleteselected_link}
+                          <li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+                            <a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+                              {mlang_message DELETE_SELECTED}
+                            </a>
+                          </li>
+                        {END deleteselected_link}
+                        <LI role="separator" class="divider">
+                        </li>
+                        <li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+                          <a   href="model19frompurchase_search.php" {$advsearchlink_attrs}  title="" >
+                            {mlang_message ADVANCED_SEARCH}
+                          </a>
+                        </li>
+                        {BEGIN searchPanelTopButtons}
+                          <li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+                            <a  id="showOptPanel{$id}"  title="" >
+                              {mlang_message SHOW_SEARCH_PANEL}
+                            </a>
+                          </li>
+                        {END searchPanelTopButtons}
+                        {BEGIN searchPanelTopButtons}
+                          <li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+                            <a  id="hideOptPanel{$id}"  title="" >
+                              {mlang_message HIDE_SEARCH_PANEL}
+                            </a>
+                          </li>
+                        {END searchPanelTopButtons}
+                        <LI role="separator" class="divider">
+                        </li>
+                        {BEGIN export_link}
+                          <li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+                            <a  href="#" {$exportlink_attrs}  title="" >
+                              {mlang_message EXPORT_RESULTS}
+                            </a>
+                          </li>
+                        {END export_link}
+                        <LI role="separator" class="divider">
+                        </li>
+                        {BEGIN import_link}
+                          <li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+                            <a  {$importlink_attrs} href="model19frompurchase_import.php?{$crosstable_attrs}"  title="" >
+                              {mlang_message IMPORT}
+                            </a>
+                          </li>
+                        {END import_link}
+                        <LI role="separator" class="divider">
+                        </li>
+                        {BEGIN AfrikaansLANGLINK}
+                          <li>
+                            <A href="#" data-lang="Afrikaans" class="rnr-langlink">
+                              {BEGIN AfrikaansLANGLINK_ACTIVE}
+                                <SPAN class="glyphicon glyphicon-ok">
+                                  &nbsp;
+                                </span>
+                              {END AfrikaansLANGLINK_ACTIVE}
+                              አማርኛ
+                            </a>
+                          </li>
+                        {END AfrikaansLANGLINK}
+                        {BEGIN EnglishLANGLINK}
+                          <li>
+                            <A href="#" data-lang="English" class="rnr-langlink">
+                              {BEGIN EnglishLANGLINK_ACTIVE}
+                                <SPAN class="glyphicon glyphicon-ok">
+                                  &nbsp;
+                                </span>
+                              {END EnglishLANGLINK_ACTIVE}
+                              English
+                            </a>
+                          </li>
+                        {END EnglishLANGLINK}
+                      </ul>
+                    </span>
+                  </span>
+                </span>
+                <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login">
+                  {BEGIN guestloginbutton}
+                    <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+                      <A type="button" title class="btn btn-primary" href="#" {$guestloginlink_attrs}>
+                        {mlang_message LOGIN}
+                      </a>
+                    </span>
+                  {END guestloginbutton}
+                </span>
+                <SPAN class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button">
+                  {BEGIN loggedas_message}
+                    <span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+                      <SPAN class="dropdown">
+                        <BUTTON type="button" title class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <SPAN class="glyphicon glyphicon-user">
+                          </span>
+                          {$username}
+                          <SPAN class="caret">
+                          </span>
+                        </button>
+                        <UL class="dropdown-menu">
+                          {BEGIN logoutbutton}
+                            <li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+                              <a  href="#" {$logoutlink_attrs}  title="" >
+                                {mlang_message LOG_OUT}
+                              </a>
+                            </li>
+                          {END logoutbutton}
+                          {BEGIN changepwd_link}
+                            <li data-itemtype="changepassword_link" data-itemid="changepassword_link" {$item_changepassword_link} data-pageid="{$pageid}" data-small >
+                              <a  href="#" {$changepwdlink_attrs}  title="" >
+                                {mlang_message CHANGE_PASSWORD}
+                              </a>
+                            </li>
+                          {END changepwd_link}
+                        </ul>
+                      </span>
+                    </span>
+                  {END loggedas_message}
+                </span>
+              </nav>
+            {END supertop_block}
+            {$locking}
+          </div>
+          <DIV class="r-body" data-resize-top="topbar" data-body-width="standard">
+            {$header}
+            <DIV class="r-top">
+              {BEGIN top_block}
+                <DIV class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}">
+                </div>
+              {END top_block}
+            </div>
+            <DIV class="r-above">
+              {BEGIN above-grid_block}
+                <DIV class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}">
+                  <DIV class="row">
+                    <DIV data-cellId="above-grid_c1" data-pageid="{$pageid}" {$cell_above-grid_c1} class="col-md-6">
+                      {BEGIN firstAboveGridCell}
+                        {BEGIN add_link}
+                          <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+                            <A type="button" title class="btn btn-primary" {$addlink_attrs} href="model19frompurchase_add.php">
+                              {mlang_message ADD_NEW}
+                            </a>
+                          </span>
+                        {END add_link}
+                        {BEGIN deleteselected_link}
+                          <span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+                            <A type="button" title class="btn btn-default" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled>
+                              {mlang_message DELETE}
+                            </a>
+                          </span>
+                        {END deleteselected_link}
+                      {END firstAboveGridCell}
+                    </div>
+                    <DIV data-cellId="above-grid_c2" data-pageid="{$pageid}" {$cell_above-grid_c2} class="r-align-right col-md-6">
+                      <span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+                        {$details_found_labeldetails_found}
+                      </span>
+                      <span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+                        {$recsPerPage}
+                      </span>
+                      {BEGIN print_friendly}
+                        <span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+                          <BUTTON title="{mlang_message WR_PRINT_FRIENDLY}" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <SPAN class="glyphicon glyphicon-print">
+                            </span>
+                            <SPAN class="caret">
+                            </span>
+                          </button>
+                          <UL class="dropdown-menu pull-right">
+                            <LI class="container-fluid">
+                              <div id="print_friendly_scope{$id}">
+                                <DIV class="row">
+                                  <DIV class="col-md-4">
+                                    {mlang_message PPANEL_SCOPE}
+                                  </div>
+                                  {BEGIN print_friendly_all}
+                                    <DIV class="col-md-8">
+                                      <label for="printAll{$id}">
+                                        <input type="radio" id="printAll{$id}" data-href="model19frompurchase_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+                                        {mlang_message PPANEL_ALL_PAGES}
+                                      </label>
+                                    </div>
+                                  {END print_friendly_all}
+                                </div>
+                                <DIV class="row">
+                                  <DIV class="col-md-4">
+                                    &nbsp;
+                                  </div>
+                                  <DIV class="col-md-8">
+                                    <label for="printPage{$id}">
+                                      <input name="printScope" id="printPage{$id}" type="radio" checked data-href="model19frompurchase_print.php?{$crosstable_attrs}">
+                                      {mlang_message PPANEL_THIS_PAGE}
+                                    </label>
+                                  </div>
+                                </div>
+                                <DIV class="row">
+                                  <DIV class="col-md-4">
+                                    &nbsp;
+                                  </div>
+                                  <DIV class="col-md-8">
+                                    <label style="color: gray;" for="printSelection{$id}">
+                                      <input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+                                      {mlang_message PPANEL_SELECTED}
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <LI class="divider" role="separator">
+                            </li>
+                            <LI class="container-fluid">
+                              <div>
+                                <label for="printPerPage{$id}">
+                                  {mlang_message RECORDS_PP}
+                                </label>
+                                <INPUT type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">
+                              </div>
+                            </li>
+                            <LI class="divider" role="separator">
+                            </li>
+                            <LI class="container-fluid text-center">
+                              <span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+                                <A type="button" title class="btn btn-primary" id="print_friendly_button{$id}">
+                                  {mlang_message PPANEL_PRINT}
+                                </a>
+                              </span>
+                            </li>
+                          </ul>
+                        </span>
+                      {END print_friendly}
+                    </div>
+                  </div>
+                </div>
+              {END above-grid_block}
+            </div>
+            <DIV class="r-grid">
+              {BEGIN grid_block}
+                {BEGIN grid_tabs}
+                  <UL class="nav nav-tabs bsgrid_tabs">
+                    {$grid_tabs_content}
+                  </ul>
+                {END grid_tabs}
+                {BEGIN message_block}
+                  <DIV data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>
+                    {$message}
+                  </div>
+                {END message_block}
+                <style>
+                  @media screen and (max-width: 767px) {
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id"]:before {
+                  content: "{$label model19frompurchase id}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="as_name"]:before {
+                  content: "{$label model19frompurchase as_name}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="model"]:before {
+                  content: "{$label model19frompurchase model}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="serial"]:before {
+                  content: "{$label model19frompurchase serial}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="supplier_id"]:before {
+                  content: "{$label model19frompurchase supplier_id}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="purchased_date"]:before {
+                  content: "{$label model19frompurchase purchased_date}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="received_date"]:before {
+                  content: "{$label model19frompurchase received_date}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="donor_id"]:before {
+                  content: "{$label model19frompurchase donor_id}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="receiver_id"]:before {
+                  content: "{$label model19frompurchase receiver_id}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="manufactured_date"]:before {
+                  content: "{$label model19frompurchase manufactured_date}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="manufacturer"]:before {
+                  content: "{$label model19frompurchase manufacturer}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="category_id"]:before {
+                  content: "{$label model19frompurchase category_id}";
+                  }
+                  [data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="photo"]:before {
+                  content: "{$label model19frompurchase photo}";
+                  }
+                  }
+                </style>
+                <TABLE data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class="table {$grid_classes} r-flexgrid rnr-b-grid rnr-gridtable" cellpadding="0" data-body-height="1">
+                  <thead>
+                    {BEGIN grid_header}
+                      <TR {$rowattrs} {$row_grid_0} class="{$rowclass} {$gridHeader_class} r-gridrow">
+                        {BEGIN cellblock_grid_headcell_icons}
+                          <TH {$cell_grid_headcell_icons} {$recordattrs} class="r-ori-vert" data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list" data-control-cell>
+                          </th>
+                        {END cellblock_grid_headcell_icons}
+                        {BEGIN cellblock_grid_headcell_checkbox}
+                          <TH {$cell_grid_headcell_checkbox} {$recordattrs} class="r-ori-vert" data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list" data-checkbox-cell>
+                            {BEGIN checkbox_column}
+                              <span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+                                <input type="checkbox" {$checkboxheader_attrs}>
+                              </span>
+                            {END checkbox_column}
+                          </th>
+                        {END cellblock_grid_headcell_checkbox}
+                        {BEGIN cellblock_grid_headcell_field}
+                          <TH {$cell_grid_headcell_field} {$recordattrs} class="r-ori-vert {$id_class}" data-field="id" data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN id_fieldheadercolumn}
+                              {BEGIN id_fieldheader}
+                                <SPAN {$id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id">
+                                  {$label model19frompurchase id}
+                                  {$arrow_icon_id}
+                                </SPAN>
+                              {END id_fieldheader}
+                            {END id_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field}
+                        {BEGIN cellblock_grid_headcell_field1}
+                          <TH {$cell_grid_headcell_field1} {$recordattrs} class="r-ori-vert {$model_class}" data-field="model" data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN model_fieldheadercolumn}
+                              {BEGIN model_fieldheader}
+                                <SPAN {$model_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="model">
+                                  {$label model19frompurchase model}
+                                  {$arrow_icon_model}
+                                </SPAN>
+                              {END model_fieldheader}
+                            {END model_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field1}
+                        {BEGIN cellblock_grid_headcell_field2}
+                          <TH {$cell_grid_headcell_field2} {$recordattrs} class="r-ori-vert {$serial_class}" data-field="serial" data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN serial_fieldheadercolumn}
+                              {BEGIN serial_fieldheader}
+                                <SPAN {$serial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="serial">
+                                  {$label model19frompurchase serial}
+                                  {$arrow_icon_serial}
+                                </SPAN>
+                              {END serial_fieldheader}
+                            {END serial_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field2}
+                        {BEGIN cellblock_grid_headcell_field3}
+                          <TH {$cell_grid_headcell_field3} {$recordattrs} class="r-ori-vert {$supplier_id_class}" data-field="supplier_id" data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN supplier_id_fieldheadercolumn}
+                              {BEGIN supplier_id_fieldheader}
+                                <SPAN {$supplier_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="supplier_id">
+                                  {$label model19frompurchase supplier_id}
+                                  {$arrow_icon_supplier_id}
+                                </SPAN>
+                              {END supplier_id_fieldheader}
+                            {END supplier_id_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field3}
+                        {BEGIN cellblock_grid_headcell_field4}
+                          <TH {$cell_grid_headcell_field4} {$recordattrs} class="r-ori-vert {$purchased_date_class}" data-field="purchased_date" data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN purchased_date_fieldheadercolumn}
+                              {BEGIN purchased_date_fieldheader}
+                                <SPAN {$purchased_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchased_date">
+                                  {$label model19frompurchase purchased_date}
+                                  {$arrow_icon_purchased_date}
+                                </SPAN>
+                              {END purchased_date_fieldheader}
+                            {END purchased_date_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field4}
+                        {BEGIN cellblock_grid_headcell_field5}
+                          <TH {$cell_grid_headcell_field5} {$recordattrs} class="r-ori-vert {$received_date_class}" data-field="received_date" data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN received_date_fieldheadercolumn}
+                              {BEGIN received_date_fieldheader}
+                                <SPAN {$received_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="received_date">
+                                  {$label model19frompurchase received_date}
+                                  {$arrow_icon_received_date}
+                                </SPAN>
+                              {END received_date_fieldheader}
+                            {END received_date_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field5}
+                        {BEGIN cellblock_grid_headcell_field6}
+                          <TH {$cell_grid_headcell_field6} {$recordattrs} class="r-ori-vert {$donor_id_class}" data-field="donor_id" data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN donor_id_fieldheadercolumn}
+                              {BEGIN donor_id_fieldheader}
+                                <SPAN {$donor_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="donor_id">
+                                  {$label model19frompurchase donor_id}
+                                  {$arrow_icon_donor_id}
+                                </SPAN>
+                              {END donor_id_fieldheader}
+                            {END donor_id_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field6}
+                        {BEGIN cellblock_grid_headcell_field7}
+                          <TH {$cell_grid_headcell_field7} {$recordattrs} class="r-ori-vert {$receiver_id_class}" data-field="receiver_id" data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN receiver_id_fieldheadercolumn}
+                              {BEGIN receiver_id_fieldheader}
+                                <SPAN {$receiver_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="receiver_id">
+                                  {$label model19frompurchase receiver_id}
+                                  {$arrow_icon_receiver_id}
+                                </SPAN>
+                              {END receiver_id_fieldheader}
+                            {END receiver_id_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field7}
+                        {BEGIN cellblock_grid_headcell_field8}
+                          <TH {$cell_grid_headcell_field8} {$recordattrs} class="r-ori-vert {$manufactured_date_class}" data-field="manufactured_date" data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN manufactured_date_fieldheadercolumn}
+                              {BEGIN manufactured_date_fieldheader}
+                                <SPAN {$manufactured_date_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manufactured_date">
+                                  {$label model19frompurchase manufactured_date}
+                                  {$arrow_icon_manufactured_date}
+                                </SPAN>
+                              {END manufactured_date_fieldheader}
+                            {END manufactured_date_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field8}
+                        {BEGIN cellblock_grid_headcell_field9}
+                          <TH {$cell_grid_headcell_field9} {$recordattrs} class="r-ori-vert {$manufacturer_class}" data-field="manufacturer" data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN manufacturer_fieldheadercolumn}
+                              {BEGIN manufacturer_fieldheader}
+                                <SPAN {$manufacturer_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manufacturer">
+                                  {$label model19frompurchase manufacturer}
+                                  {$arrow_icon_manufacturer}
+                                </SPAN>
+                              {END manufacturer_fieldheader}
+                            {END manufacturer_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field9}
+                        {BEGIN cellblock_grid_headcell_field10}
+                          <TH {$cell_grid_headcell_field10} {$recordattrs} class="r-ori-vert {$category_id_class}" data-field="category_id" data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN category_id_fieldheadercolumn}
+                              {BEGIN category_id_fieldheader}
+                                <SPAN {$category_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="category_id">
+                                  {$label model19frompurchase category_id}
+                                  {$arrow_icon_category_id}
+                                </SPAN>
+                              {END category_id_fieldheader}
+                            {END category_id_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field10}
+                        {BEGIN cellblock_grid_headcell_field11}
+                          <TH {$cell_grid_headcell_field11} {$recordattrs} class="r-ori-vert {$photo_class}" data-field="photo" data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN photo_fieldheadercolumn}
+                              {BEGIN photo_fieldheader}
+                                <SPAN {$photo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="photo">
+                                  {$label model19frompurchase photo}
+                                  {$arrow_icon_photo}
+                                </SPAN>
+                              {END photo_fieldheader}
+                            {END photo_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field11}
+                        {BEGIN cellblock_grid_headcell_field12}
+                          <TH {$cell_grid_headcell_field12} {$recordattrs} class="r-ori-vert {$as_name_class}" data-field="as_name" data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN as_name_fieldheadercolumn}
+                              {BEGIN as_name_fieldheader}
+                                <SPAN {$as_name_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="as_name">
+                                  {$label model19frompurchase as_name}
+                                  {$arrow_icon_as_name}
+                                </SPAN>
+                              {END as_name_fieldheader}
+                            {END as_name_fieldheadercolumn}
+                          </th>
+                        {END cellblock_grid_headcell_field12}
+                      </tr>
+                    {END grid_header}
+                  </thead>
+                  <tbody>
+                    {BEGIN grid_row}
+                      <TR {$rowattrs} {$row_grid_1} class="{$rowclass} r-gridrow">
+                        {BEGIN cellblock_grid_cell_icons}
+                          <TD {$cell_grid_cell_icons} {$recordattrs} class="
+" data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list" data-control-cell>
+                            {BEGIN edit_column}
+                              {BEGIN edit_link}
+                                <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+                                  <A type="button" title="{mlang_message EDIT}" class="btn-link glyphicon glyphicon-pencil" href="model19frompurchase_edit.php?{$editlink}" {$editlink_attrs} title="{mlang_message EDIT}">
+                                  </a>
+                                </span>
+                              {END edit_link}
+                            {END edit_column}
+                            {BEGIN view_column}
+                              {BEGIN view_link}
+                                <span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+                                  <A type="button" title="{mlang_message VIEW_RECORD}" class="btn-link glyphicon glyphicon-search" href="model19frompurchase_view.php?{$editlink}" {$viewlink_attrs} title="{mlang_message VIEW}">
+                                  </a>
+                                </span>
+                              {END view_link}
+                            {END view_column}
+                          </td>
+                        {END cellblock_grid_cell_icons}
+                        {BEGIN cellblock_grid_cell_checkbox}
+                          <TD {$cell_grid_cell_checkbox} {$recordattrs} class="r-ori-vert" data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-control-cell data-checkbox-cell>
+                            {BEGIN checkbox_column}
+                              <span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+                                <input type="checkbox" {$checkbox_attrs}>
+                              </span>
+                            {END checkbox_column}
+                          </td>
+                        {END cellblock_grid_cell_checkbox}
+                        {BEGIN cellblock_grid_cell_field}
+                          <TD {$cell_grid_cell_field} {$recordattrs} class="r-ori-vert {$id_class}" data-field="id" data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN id_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-default-width >
+                                {$id_value}
+                              </span>
+                            {END id_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field}
+                        {BEGIN cellblock_grid_cell_field1}
+                          <TD {$cell_grid_cell_field1} {$recordattrs} class="r-ori-vert {$model_class}" data-field="model" data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN model_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="model" data-default-width >
+                                {$model_value}
+                              </span>
+                            {END model_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field1}
+                        {BEGIN cellblock_grid_cell_field2}
+                          <TD {$cell_grid_cell_field2} {$recordattrs} class="r-ori-vert {$serial_class}" data-field="serial" data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN serial_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="serial" data-default-width >
+                                {$serial_value}
+                              </span>
+                            {END serial_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field2}
+                        {BEGIN cellblock_grid_cell_field3}
+                          <TD {$cell_grid_cell_field3} {$recordattrs} class="r-ori-vert {$supplier_id_class}" data-field="supplier_id" data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN supplier_id_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="supplier_id" data-default-width >
+                                {$supplier_id_value}
+                              </span>
+                            {END supplier_id_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field3}
+                        {BEGIN cellblock_grid_cell_field4}
+                          <TD {$cell_grid_cell_field4} {$recordattrs} class="r-ori-vert {$purchased_date_class}" data-field="purchased_date" data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN purchased_date_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchased_date" data-default-width >
+                                {$purchased_date_value}
+                              </span>
+                            {END purchased_date_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field4}
+                        {BEGIN cellblock_grid_cell_field5}
+                          <TD {$cell_grid_cell_field5} {$recordattrs} class="r-ori-vert {$received_date_class}" data-field="received_date" data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN received_date_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="received_date" data-default-width >
+                                {$received_date_value}
+                              </span>
+                            {END received_date_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field5}
+                        {BEGIN cellblock_grid_cell_field6}
+                          <TD {$cell_grid_cell_field6} {$recordattrs} class="r-ori-vert {$donor_id_class}" data-field="donor_id" data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN donor_id_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="donor_id" data-default-width >
+                                {$donor_id_value}
+                              </span>
+                            {END donor_id_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field6}
+                        {BEGIN cellblock_grid_cell_field7}
+                          <TD {$cell_grid_cell_field7} {$recordattrs} class="r-ori-vert {$receiver_id_class}" data-field="receiver_id" data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN receiver_id_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="receiver_id" data-default-width >
+                                {$receiver_id_value}
+                              </span>
+                            {END receiver_id_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field7}
+                        {BEGIN cellblock_grid_cell_field8}
+                          <TD {$cell_grid_cell_field8} {$recordattrs} class="r-ori-vert {$manufactured_date_class}" data-field="manufactured_date" data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN manufactured_date_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manufactured_date" data-default-width >
+                                {$manufactured_date_value}
+                              </span>
+                            {END manufactured_date_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field8}
+                        {BEGIN cellblock_grid_cell_field9}
+                          <TD {$cell_grid_cell_field9} {$recordattrs} class="r-ori-vert {$manufacturer_class}" data-field="manufacturer" data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN manufacturer_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="manufacturer" data-default-width >
+                                {$manufacturer_value}
+                              </span>
+                            {END manufacturer_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field9}
+                        {BEGIN cellblock_grid_cell_field10}
+                          <TD {$cell_grid_cell_field10} {$recordattrs} class="r-ori-vert {$category_id_class}" data-field="category_id" data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN category_id_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="category_id" data-default-width >
+                                {$category_id_value}
+                              </span>
+                            {END category_id_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field10}
+                        {BEGIN cellblock_grid_cell_field11}
+                          <TD {$cell_grid_cell_field11} {$recordattrs} class="r-ori-vert {$photo_class}" data-field="photo" data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN photo_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="photo" data-default-width >
+                                {$photo_value}
+                              </span>
+                            {END photo_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field11}
+                        {BEGIN cellblock_grid_cell_field12}
+                          <TD {$cell_grid_cell_field12} {$recordattrs} class="r-ori-vert {$as_name_class}" data-field="as_name" data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}">
+                            {BEGIN as_name_fieldcolumn}
+                              <span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="as_name" data-default-width >
+                                {$as_name_value}
+                              </span>
+                            {END as_name_fieldcolumn}
+                          </td>
+                        {END cellblock_grid_cell_field12}
+                      </tr>
+                    {END grid_row}
+                  </tbody>
+                  <tfoot>
+                    <TR {$rowattrs} {$row_grid_2} class="{$rowclass} {$gridFooter_class} r-gridrow">
+                      {BEGIN cellblock_grid_footcell_icons}
+                        <TD {$cell_grid_footcell_icons} {$recordattrs} class="r-ori-vert" data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}">
+                        </td>
+                      {END cellblock_grid_footcell_icons}
+                      {BEGIN cellblock_grid_footcell_checkbox}
+                        <TD {$cell_grid_footcell_checkbox} {$recordattrs} class="r-ori-vert" data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}">
+                        </td>
+                      {END cellblock_grid_footcell_checkbox}
+                      {BEGIN cellblock_grid_footcell_field}
+                        <TD {$cell_grid_footcell_field} {$recordattrs} class="r-ori-vert {$id_class}" data-field="id" data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field}
+                      {BEGIN cellblock_grid_footcell_field1}
+                        <TD {$cell_grid_footcell_field1} {$recordattrs} class="r-ori-vert {$model_class}" data-field="model" data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field1}
+                      {BEGIN cellblock_grid_footcell_field2}
+                        <TD {$cell_grid_footcell_field2} {$recordattrs} class="r-ori-vert {$serial_class}" data-field="serial" data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field2}
+                      {BEGIN cellblock_grid_footcell_field3}
+                        <TD {$cell_grid_footcell_field3} {$recordattrs} class="r-ori-vert {$supplier_id_class}" data-field="supplier_id" data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field3}
+                      {BEGIN cellblock_grid_footcell_field4}
+                        <TD {$cell_grid_footcell_field4} {$recordattrs} class="r-ori-vert {$purchased_date_class}" data-field="purchased_date" data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field4}
+                      {BEGIN cellblock_grid_footcell_field5}
+                        <TD {$cell_grid_footcell_field5} {$recordattrs} class="r-ori-vert {$received_date_class}" data-field="received_date" data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field5}
+                      {BEGIN cellblock_grid_footcell_field6}
+                        <TD {$cell_grid_footcell_field6} {$recordattrs} class="r-ori-vert {$donor_id_class}" data-field="donor_id" data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field6}
+                      {BEGIN cellblock_grid_footcell_field7}
+                        <TD {$cell_grid_footcell_field7} {$recordattrs} class="r-ori-vert {$receiver_id_class}" data-field="receiver_id" data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field7}
+                      {BEGIN cellblock_grid_footcell_field8}
+                        <TD {$cell_grid_footcell_field8} {$recordattrs} class="r-ori-vert {$manufactured_date_class}" data-field="manufactured_date" data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field8}
+                      {BEGIN cellblock_grid_footcell_field9}
+                        <TD {$cell_grid_footcell_field9} {$recordattrs} class="r-ori-vert {$manufacturer_class}" data-field="manufacturer" data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field9}
+                      {BEGIN cellblock_grid_footcell_field10}
+                        <TD {$cell_grid_footcell_field10} {$recordattrs} class="r-ori-vert {$category_id_class}" data-field="category_id" data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field10}
+                      {BEGIN cellblock_grid_footcell_field11}
+                        <TD {$cell_grid_footcell_field11} {$recordattrs} class="r-ori-vert {$photo_class}" data-field="photo" data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field11}
+                      {BEGIN cellblock_grid_footcell_field12}
+                        <TD {$cell_grid_footcell_field12} {$recordattrs} class="r-ori-vert {$as_name_class}" data-field="as_name" data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="model19frompurchase_list">
+                        </td>
+                      {END cellblock_grid_footcell_field12}
+                    </tr>
+                  </tfoot>
+                </table>
+              {END grid_block}
+            </div>
+            <DIV class="r-below">
+              {BEGIN below-grid_block}
+                <DIV class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}">
+                  <DIV class="row">
+                    <DIV data-cellId="below-grid_c1" data-pageid="{$pageid}" {$cell_below-grid_c1} class="r-align-center r-ori-vert col-md-12">
+                      {BEGIN pagination_block}
+                        <span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+                          {$pagination}
+                        </span>
+                      {END pagination_block}
+                    </div>
+                  </div>
+                </div>
+              {END below-grid_block}
+            </div>
+            {$footer}
+          </div>
+        </div>
+      </div>
+    {END body}
+  </body>
+</html>

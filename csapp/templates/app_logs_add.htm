@@ -1,0 +1,413 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel app_logs add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN Timestamp_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Timestamp}  r-vertical-field" 
+	data-fieldname="Timestamp" 
+	data-signal-error-for="Timestamp{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="Timestamp" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Timestamp}">
+		{BEGIN Timestamp_label}{$label app_logs Timestamp }{END Timestamp_label}
+	</label>
+	<div class="r-edit-field">
+		{$Timestamp_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Timestamp">
+		<div class="text-muted" >
+		{$tooltip app_logs Timestamp }		</div>
+	</div>
+</div>
+
+
+{END Timestamp_fieldblock}
+											
+{BEGIN Action_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Action}  r-vertical-field" 
+	data-fieldname="Action" 
+	data-signal-error-for="Action{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Action" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_Action}">
+		{BEGIN Action_label}{$label app_logs Action }{END Action_label}
+	</label>
+	<div class="r-edit-field">
+		{$Action_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Action">
+		<div class="text-muted" >
+		{$tooltip app_logs Action }		</div>
+	</div>
+</div>
+
+
+{END Action_fieldblock}
+											
+{BEGIN TableName_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TableName}  r-vertical-field" 
+	data-fieldname="TableName" 
+	data-signal-error-for="TableName{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="TableName" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_TableName}">
+		{BEGIN TableName_label}{$label app_logs TableName }{END TableName_label}
+	</label>
+	<div class="r-edit-field">
+		{$TableName_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TableName">
+		<div class="text-muted" >
+		{$tooltip app_logs TableName }		</div>
+	</div>
+</div>
+
+
+{END TableName_fieldblock}
+											
+{BEGIN RecordID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RecordID}  r-vertical-field" 
+	data-fieldname="RecordID" 
+	data-signal-error-for="RecordID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="RecordID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_RecordID}">
+		{BEGIN RecordID_label}{$label app_logs RecordID }{END RecordID_label}
+	</label>
+	<div class="r-edit-field">
+		{$RecordID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RecordID">
+		<div class="text-muted" >
+		{$tooltip app_logs RecordID }		</div>
+	</div>
+</div>
+
+
+{END RecordID_fieldblock}
+											
+{BEGIN SqlQuery_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_SqlQuery}  r-vertical-field" 
+	data-fieldname="SqlQuery" 
+	data-signal-error-for="SqlQuery{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="SqlQuery" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_SqlQuery}">
+		{BEGIN SqlQuery_label}{$label app_logs SqlQuery }{END SqlQuery_label}
+	</label>
+	<div class="r-edit-field">
+		{$SqlQuery_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="SqlQuery">
+		<div class="text-muted" >
+		{$tooltip app_logs SqlQuery }		</div>
+	</div>
+</div>
+
+
+{END SqlQuery_fieldblock}
+											
+{BEGIN UserID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserID}  r-vertical-field" 
+	data-fieldname="UserID" 
+	data-signal-error-for="UserID{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="UserID" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_UserID}">
+		{BEGIN UserID_label}{$label app_logs UserID }{END UserID_label}
+	</label>
+	<div class="r-edit-field">
+		{$UserID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UserID">
+		<div class="text-muted" >
+		{$tooltip app_logs UserID }		</div>
+	</div>
+</div>
+
+
+{END UserID_fieldblock}
+											
+{BEGIN ServerIP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ServerIP}  r-vertical-field" 
+	data-fieldname="ServerIP" 
+	data-signal-error-for="ServerIP{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="ServerIP" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_ServerIP}">
+		{BEGIN ServerIP_label}{$label app_logs ServerIP }{END ServerIP_label}
+	</label>
+	<div class="r-edit-field">
+		{$ServerIP_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ServerIP">
+		<div class="text-muted" >
+		{$tooltip app_logs ServerIP }		</div>
+	</div>
+</div>
+
+
+{END ServerIP_fieldblock}
+											
+{BEGIN RequestUrl_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RequestUrl}  r-vertical-field" 
+	data-fieldname="RequestUrl" 
+	data-signal-error-for="RequestUrl{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="RequestUrl" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_RequestUrl}">
+		{BEGIN RequestUrl_label}{$label app_logs RequestUrl }{END RequestUrl_label}
+	</label>
+	<div class="r-edit-field">
+		{$RequestUrl_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RequestUrl">
+		<div class="text-muted" >
+		{$tooltip app_logs RequestUrl }		</div>
+	</div>
+</div>
+
+
+{END RequestUrl_fieldblock}
+											
+{BEGIN RequestData_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RequestData}  r-vertical-field" 
+	data-fieldname="RequestData" 
+	data-signal-error-for="RequestData{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="RequestData" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_RequestData}">
+		{BEGIN RequestData_label}{$label app_logs RequestData }{END RequestData_label}
+	</label>
+	<div class="r-edit-field">
+		{$RequestData_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RequestData">
+		<div class="text-muted" >
+		{$tooltip app_logs RequestData }		</div>
+	</div>
+</div>
+
+
+{END RequestData_fieldblock}
+											
+{BEGIN RequestCompleted_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RequestCompleted}  r-vertical-field" 
+	data-fieldname="RequestCompleted" 
+	data-signal-error-for="RequestCompleted{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="RequestCompleted" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_RequestCompleted}">
+		{BEGIN RequestCompleted_label}{$label app_logs RequestCompleted }{END RequestCompleted_label}
+	</label>
+	<div class="r-edit-field">
+		{$RequestCompleted_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RequestCompleted">
+		<div class="text-muted" >
+		{$tooltip app_logs RequestCompleted }		</div>
+	</div>
+</div>
+
+
+{END RequestCompleted_fieldblock}
+											
+{BEGIN RequestMsg_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_RequestMsg}  r-vertical-field" 
+	data-fieldname="RequestMsg" 
+	data-signal-error-for="RequestMsg{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="RequestMsg" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_RequestMsg}">
+		{BEGIN RequestMsg_label}{$label app_logs RequestMsg }{END RequestMsg_label}
+	</label>
+	<div class="r-edit-field">
+		{$RequestMsg_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="RequestMsg">
+		<div class="text-muted" >
+		{$tooltip app_logs RequestMsg }		</div>
+	</div>
+</div>
+
+
+{END RequestMsg_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

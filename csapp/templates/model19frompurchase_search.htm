@@ -1,0 +1,591 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel model19frompurchase search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id" 
+	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label model19frompurchase id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN model_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_model}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="model" 
+	
+	data-signal-error-for="model{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="model" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_model}">
+		{$label model19frompurchase model }	</label>
+	<div class="r-search-option">
+		{$searchtype_model}
+	</div>
+	<div class="r-search-field">
+		{$model_editcontrol}	</div>
+	<div class="r-search-field">
+		{$model_editcontrol1}
+	</div>
+	
+</div>
+
+{END model_fieldblock}
+											
+{BEGIN serial_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_serial}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="serial" 
+	
+	data-signal-error-for="serial{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="serial" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_serial}">
+		{$label model19frompurchase serial }	</label>
+	<div class="r-search-option">
+		{$searchtype_serial}
+	</div>
+	<div class="r-search-field">
+		{$serial_editcontrol}	</div>
+	<div class="r-search-field">
+		{$serial_editcontrol1}
+	</div>
+	
+</div>
+
+{END serial_fieldblock}
+											
+{BEGIN supplier_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_supplier_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="supplier_id" 
+	
+	data-signal-error-for="supplier_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="supplier_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_supplier_id}">
+		{$label model19frompurchase supplier_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_supplier_id}
+	</div>
+	<div class="r-search-field">
+		{$supplier_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$supplier_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END supplier_id_fieldblock}
+											
+{BEGIN purchased_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_purchased_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="purchased_date" 
+	
+	data-signal-error-for="purchased_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="purchased_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_purchased_date}">
+		{$label model19frompurchase purchased_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_purchased_date}
+	</div>
+	<div class="r-search-field">
+		{$purchased_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$purchased_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END purchased_date_fieldblock}
+											
+{BEGIN received_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_received_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="received_date" 
+	
+	data-signal-error-for="received_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="received_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_received_date}">
+		{$label model19frompurchase received_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_received_date}
+	</div>
+	<div class="r-search-field">
+		{$received_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$received_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END received_date_fieldblock}
+											
+{BEGIN donor_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_donor_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="donor_id" 
+	
+	data-signal-error-for="donor_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="donor_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_donor_id}">
+		{$label model19frompurchase donor_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_donor_id}
+	</div>
+	<div class="r-search-field">
+		{$donor_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$donor_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END donor_id_fieldblock}
+											
+{BEGIN receiver_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receiver_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="receiver_id" 
+	
+	data-signal-error-for="receiver_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="receiver_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_receiver_id}">
+		{$label model19frompurchase receiver_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_receiver_id}
+	</div>
+	<div class="r-search-field">
+		{$receiver_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$receiver_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END receiver_id_fieldblock}
+											
+{BEGIN manufactured_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manufactured_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="manufactured_date" 
+	
+	data-signal-error-for="manufactured_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="manufactured_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_manufactured_date}">
+		{$label model19frompurchase manufactured_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_manufactured_date}
+	</div>
+	<div class="r-search-field">
+		{$manufactured_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$manufactured_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END manufactured_date_fieldblock}
+											
+{BEGIN manufacturer_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manufacturer}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="manufacturer" 
+	
+	data-signal-error-for="manufacturer{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="manufacturer" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_manufacturer}">
+		{$label model19frompurchase manufacturer }	</label>
+	<div class="r-search-option">
+		{$searchtype_manufacturer}
+	</div>
+	<div class="r-search-field">
+		{$manufacturer_editcontrol}	</div>
+	<div class="r-search-field">
+		{$manufacturer_editcontrol1}
+	</div>
+	
+</div>
+
+{END manufacturer_fieldblock}
+											
+{BEGIN category_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="category_id" 
+	
+	data-signal-error-for="category_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="category_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_category_id}">
+		{$label model19frompurchase category_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_category_id}
+	</div>
+	<div class="r-search-field">
+		{$category_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$category_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END category_id_fieldblock}
+											
+{BEGIN photo_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_photo}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="photo" 
+	
+	data-signal-error-for="photo{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="photo" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_photo}">
+		{$label model19frompurchase photo }	</label>
+	<div class="r-search-option">
+		{$searchtype_photo}
+	</div>
+	<div class="r-search-field">
+		{$photo_editcontrol}	</div>
+	<div class="r-search-field">
+		{$photo_editcontrol1}
+	</div>
+	
+</div>
+
+{END photo_fieldblock}
+											
+{BEGIN as_name_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_as_name}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="as_name" 
+	
+	data-signal-error-for="as_name{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="as_name" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_as_name}">
+		{$label model19frompurchase as_name }	</label>
+	<div class="r-search-option">
+		{$searchtype_as_name}
+	</div>
+	<div class="r-search-field">
+		{$as_name_editcontrol}	</div>
+	<div class="r-search-field">
+		{$as_name_editcontrol1}
+	</div>
+	
+</div>
+
+{END as_name_fieldblock}
+											
+{BEGIN price_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_price}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="price" 
+	
+	data-signal-error-for="price{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="price" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_price}">
+		{$label model19frompurchase price }	</label>
+	<div class="r-search-option">
+		{$searchtype_price}
+	</div>
+	<div class="r-search-field">
+		{$price_editcontrol}	</div>
+	<div class="r-search-field">
+		{$price_editcontrol1}
+	</div>
+	
+</div>
+
+{END price_fieldblock}
+											
+{BEGIN receipt_no_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_receipt_no}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="receipt_no" 
+	
+	data-signal-error-for="receipt_no{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="receipt_no" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_receipt_no}">
+		{$label model19frompurchase receipt_no }	</label>
+	<div class="r-search-option">
+		{$searchtype_receipt_no}
+	</div>
+	<div class="r-search-field">
+		{$receipt_no_editcontrol}	</div>
+	<div class="r-search-field">
+		{$receipt_no_editcontrol1}
+	</div>
+	
+</div>
+
+{END receipt_no_fieldblock}
+											
+{BEGIN type_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_type_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="type_id" 
+	
+	data-signal-error-for="type_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="type_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_type_id}">
+		{$label model19frompurchase type_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_type_id}
+	</div>
+	<div class="r-search-field">
+		{$type_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$type_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END type_id_fieldblock}
+											
+{BEGIN seen_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_seen}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="seen" 
+	
+	data-signal-error-for="seen{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="seen" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_seen}">
+		{$label model19frompurchase seen }	</label>
+	<div class="r-search-option">
+		{$searchtype_seen}
+	</div>
+	<div class="r-search-field">
+		{$seen_editcontrol}	</div>
+	<div class="r-search-field">
+		{$seen_editcontrol1}
+	</div>
+	
+</div>
+
+{END seen_fieldblock}
+											
+{BEGIN level_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_level}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="level" 
+	
+	data-signal-error-for="level{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="level" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_level}">
+		{$label model19frompurchase level }	</label>
+	<div class="r-search-option">
+		{$searchtype_level}
+	</div>
+	<div class="r-search-field">
+		{$level_editcontrol}	</div>
+	<div class="r-search-field">
+		{$level_editcontrol1}
+	</div>
+	
+</div>
+
+{END level_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

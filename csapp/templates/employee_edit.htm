@@ -1,0 +1,500 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel employee edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN firstname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_firstname}  r-vertical-field" 
+	data-fieldname="firstname" 
+	data-signal-error-for="firstname{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="firstname" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_firstname}">
+		{BEGIN firstname_label}{$label employee firstname }{END firstname_label}
+	</label>
+	<div class="r-edit-field">
+		{$firstname_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="firstname">
+		<div class="text-muted" >
+		{$tooltip employee firstname }		</div>
+	</div>
+</div>
+
+
+{END firstname_fieldblock}
+											
+{BEGIN lastname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lastname}  r-vertical-field" 
+	data-fieldname="lastname" 
+	data-signal-error-for="lastname{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="lastname" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_lastname}">
+		{BEGIN lastname_label}{$label employee lastname }{END lastname_label}
+	</label>
+	<div class="r-edit-field">
+		{$lastname_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="lastname">
+		<div class="text-muted" >
+		{$tooltip employee lastname }		</div>
+	</div>
+</div>
+
+
+{END lastname_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-fieldname="email" 
+	data-signal-error-for="email{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="email" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_email}">
+		{BEGIN email_label}{$label employee email }{END email_label}
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="email">
+		<div class="text-muted" >
+		{$tooltip employee email }		</div>
+	</div>
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_phone}  r-vertical-field" 
+	data-fieldname="phone" 
+	data-signal-error-for="phone{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="phone" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_phone}">
+		{BEGIN phone_label}{$label employee phone }{END phone_label}
+	</label>
+	<div class="r-edit-field">
+		{$phone_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="phone">
+		<div class="text-muted" >
+		{$tooltip employee phone }		</div>
+	</div>
+</div>
+
+
+{END phone_fieldblock}
+											
+{BEGIN hire_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hire_date}  r-vertical-field" 
+	data-fieldname="hire_date" 
+	data-signal-error-for="hire_date{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="hire_date" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_hire_date}">
+		{BEGIN hire_date_label}{$label employee hire_date }{END hire_date_label}
+	</label>
+	<div class="r-edit-field">
+		{$hire_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="hire_date">
+		<div class="text-muted" >
+		{$tooltip employee hire_date }		</div>
+	</div>
+</div>
+
+
+{END hire_date_fieldblock}
+											
+{BEGIN department_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_department}  r-vertical-field" 
+	data-fieldname="department" 
+	data-signal-error-for="department{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="department" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_department}">
+		{BEGIN department_label}{$label employee department }{END department_label}
+	</label>
+	<div class="r-edit-field">
+		{$department_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="department">
+		<div class="text-muted" >
+		{$tooltip employee department }		</div>
+	</div>
+</div>
+
+
+{END department_fieldblock}
+											
+{BEGIN manager_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manager_id}  r-vertical-field" 
+	data-fieldname="manager_id" 
+	data-signal-error-for="manager_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="manager_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_manager_id}">
+		{BEGIN manager_id_label}{$label employee manager_id }{END manager_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$manager_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="manager_id">
+		<div class="text-muted" >
+		{$tooltip employee manager_id }		</div>
+	</div>
+</div>
+
+
+{END manager_id_fieldblock}
+											
+{BEGIN workunit_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_workunit_id}  r-vertical-field" 
+	data-fieldname="workunit_id" 
+	data-signal-error-for="workunit_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="workunit_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_workunit_id}">
+		{BEGIN workunit_id_label}{$label employee workunit_id }{END workunit_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$workunit_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="workunit_id">
+		<div class="text-muted" >
+		{$tooltip employee workunit_id }		</div>
+	</div>
+</div>
+
+
+{END workunit_id_fieldblock}
+											
+{BEGIN job_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_job_id}  r-vertical-field" 
+	data-fieldname="job_id" 
+	data-signal-error-for="job_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="job_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_job_id}">
+		{BEGIN job_id_label}{$label employee job_id }{END job_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$job_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="job_id">
+		<div class="text-muted" >
+		{$tooltip employee job_id }		</div>
+	</div>
+</div>
+
+
+{END job_id_fieldblock}
+											
+{BEGIN salary_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_salary}  r-vertical-field" 
+	data-fieldname="salary" 
+	data-signal-error-for="salary{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="salary" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_salary}">
+		{BEGIN salary_label}{$label employee salary }{END salary_label}
+	</label>
+	<div class="r-edit-field">
+		{$salary_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="salary">
+		<div class="text-muted" >
+		{$tooltip employee salary }		</div>
+	</div>
+</div>
+
+
+{END salary_fieldblock}
+											
+{BEGIN house_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_house_no}  r-vertical-field" 
+	data-fieldname="house_no" 
+	data-signal-error-for="house_no{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="house_no" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_house_no}">
+		{BEGIN house_no_label}{$label employee house_no }{END house_no_label}
+	</label>
+	<div class="r-edit-field">
+		{$house_no_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="house_no">
+		<div class="text-muted" >
+		{$tooltip employee house_no }		</div>
+	</div>
+</div>
+
+
+{END house_no_fieldblock}
+											
+{BEGIN status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status}  r-vertical-field" 
+	data-fieldname="status" 
+	data-signal-error-for="status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_status}">
+		{BEGIN status_label}{$label employee status }{END status_label}
+	</label>
+	<div class="r-edit-field">
+		{$status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="status">
+		<div class="text-muted" >
+		{$tooltip employee status }		</div>
+	</div>
+</div>
+
+
+{END status_fieldblock}
+											
+{BEGIN photo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_photo}  r-vertical-field" 
+	data-fieldname="photo" 
+	data-signal-error-for="photo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="photo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_photo}">
+		{BEGIN photo_label}{$label employee photo }{END photo_label}
+	</label>
+	<div class="r-edit-field">
+		{$photo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="photo">
+		<div class="text-muted" >
+		{$tooltip employee photo }		</div>
+	</div>
+</div>
+
+
+{END photo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							{mlang_message CANCEL}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		{mlang_message RESET}		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		{mlang_message VIEW}		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

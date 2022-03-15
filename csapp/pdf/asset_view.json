@@ -1,0 +1,632 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+		body: [
+				
+					
+		[
+												
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel asset view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
+					 ],	
+		
+		body: [
+				
+					{BEGIN row_grid_0}
+				
+		[
+												{BEGIN cellblock_grid_c21}
+
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+					{BEGIN rowspan_grid_c21}
+			rowSpan: {$rowspan_grid_c21},
+			{END rowspan_grid_c21}
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel asset image }","bold":true},{"text":{$image_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          },
+
+{END cellblock_grid_c21}
+																			{BEGIN cellblock_grid_c30}
+
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel asset asset_id }","bold":true},{"text":{$asset_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          },
+
+{END cellblock_grid_c30}
+											],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  1,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c}
+
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel asset asset_name }","bold":true},{"text":{$asset_name_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  2,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c34}
+
+{
+	cellId: 'c34',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel asset asset_model }","bold":true},{"text":{$asset_model_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c34}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  3,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c31}
+
+{
+	cellId: 'c31',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel asset asset_serial }","bold":true},{"text":{$asset_serial_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c31}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  4,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c28}
+
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel asset manufacturer }","bold":true},{"text":{$manufacturer_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c28}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  5,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c25}
+
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel asset manufactured_date }","bold":true},{"text":{$manufactured_date_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c25}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  6,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c22}
+
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel asset category_id }","bold":true},{"text":{$category_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c22}
+											],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  7,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c19}
+
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel asset suplier_id }","bold":true},{"text":{$suplier_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c19}
+											],
+				{END row_grid_7}
+								{BEGIN row_grid_8}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  8,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c16}
+
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel asset status_id }","bold":true},{"text":{$status_id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c16}
+											],
+				{END row_grid_8}
+								{BEGIN row_grid_9}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  9,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c13}
+
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel asset registration_date }","bold":true},{"text":{$registration_date_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c13}
+											],
+				{END row_grid_9}
+								{BEGIN row_grid_10}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  10,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c10}
+
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel asset purchased_date }","bold":true},{"text":{$purchased_date_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c10}
+											],
+				{END row_grid_10}
+								{BEGIN row_grid_11}
+				
+		[
+												{ 
+					cellId: 'c21',
+					row:  11,
+					col:  0,
+					text: ''
+				},
+															{BEGIN cellblock_grid_c7}
+
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel asset taken }","bold":true},{"text":{$taken_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [false,false,false,false],
+          },
+
+{END cellblock_grid_c7}
+											],
+				{END row_grid_11}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+		body: [
+				
+					
+		[
+												
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          },
+
+																			
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'undefinedcell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+    },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

@@ -1,0 +1,13 @@
+Import into employee
+27/02/2020 6:25:24 ጥዋት
+
+11 out of 13 records processed successfully.
+1 records added.
+10 records updated.
+2 records processed with errors:
+
+this record already exist
+"1","dawit","girma","dawit@gmail.com","","2018-1-14 0:0:0","2300","1254","working","database designer","dawit girma","database","<div class=""r-images"" data-images=""[{&quot;image&quot;:&quot;mfhandler.php?file=22549864_1984873805088506_1103852639388707058_n.jpg&amp;table=employee&amp;field=photo&amp;pageType=export&amp;fkey=&amp;nodisp=1&quot;,&quot;filename&quot;:&quot;22549864_1984873805088506_1103852639388707058_n.jpg&quot;}]"" data-thumbnails="""" data-multiple=""1"" data-max-images=""0"" data-gallery=""1"" data-gallery-mode=""1"" data-caption-mode=""2"" data-width=""100"" data-height=""100"" data-border=""true"" data-fullwidth=""true""></div>","ICT "
+
+this record already exist
+"2","helen","abraraw","helen@gmail.com","","2019-3-3 0:0:0","4000","1267","working","manager","temesgen yitbarek","","","purchasing and property administration"

@@ -1,0 +1,284 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel eaempassets view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN employee_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_employee_id}  r-vertical-field" data-fieldname="employee_id" data-signal-error-for="employee_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="employee_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_employee_id}">
+		
+		{BEGIN employee_id_label}{$label eaempassets employee_id }{END employee_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$employee_id_value}	</div>
+
+		
+</div>
+
+
+{END employee_id_fieldblock}
+											
+{BEGIN ea_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ea_id}  r-vertical-field" data-fieldname="ea_id" data-signal-error-for="ea_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="ea_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_ea_id}">
+		
+		{BEGIN ea_id_label}{$label eaempassets ea_id }{END ea_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$ea_id_value}	</div>
+
+		
+</div>
+
+
+{END ea_id_fieldblock}
+											
+{BEGIN issued_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_issued_date}  r-vertical-field" data-fieldname="issued_date" data-signal-error-for="issued_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="issued_date" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_issued_date}">
+		
+		{BEGIN issued_date_label}{$label eaempassets issued_date }{END issued_date_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$issued_date_value}	</div>
+
+		
+</div>
+
+
+{END issued_date_fieldblock}
+											
+{BEGIN returned_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_returned_date}  r-vertical-field" data-fieldname="returned_date" data-signal-error-for="returned_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="returned_date" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_returned_date}">
+		
+		{BEGIN returned_date_label}{$label eaempassets returned_date }{END returned_date_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$returned_date_value}	</div>
+
+		
+</div>
+
+
+{END returned_date_fieldblock}
+											
+{BEGIN transfer_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transfer_date}  r-vertical-field" data-fieldname="transfer_date" data-signal-error-for="transfer_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="transfer_date" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_transfer_date}">
+		
+		{BEGIN transfer_date_label}{$label eaempassets transfer_date }{END transfer_date_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$transfer_date_value}	</div>
+
+		
+</div>
+
+
+{END transfer_date_fieldblock}
+											
+{BEGIN asset_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_asset_id}  r-vertical-field" data-fieldname="asset_id" data-signal-error-for="asset_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="asset_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_asset_id}">
+		
+		{BEGIN asset_id_label}{$label eaempassets asset_id }{END asset_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$asset_id_value}	</div>
+
+		
+</div>
+
+
+{END asset_id_fieldblock}
+											
+{BEGIN transaction_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transaction}  r-vertical-field" data-fieldname="transaction" data-signal-error-for="transaction{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="transaction" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_transaction}">
+		
+		{BEGIN transaction_label}{$label eaempassets transaction }{END transaction_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$transaction_value}	</div>
+
+		
+</div>
+
+
+{END transaction_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

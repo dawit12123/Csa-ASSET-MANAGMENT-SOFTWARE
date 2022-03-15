@@ -1,0 +1,110 @@
+[data-cellid="top_c4"][data-page="mode22_print"][data-cellid="top_c4"][data-page="mode22_print"][data-cellid="top_c4"][data-page="mode22_print"] {
+  width: 50px;
+}
+[data-cellid="grid_footcell_field"][data-page="mode22_print"][data-cellid="grid_footcell_field"][data-page="mode22_print"][data-cellid="grid_footcell_field"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field1"][data-page="mode22_print"][data-cellid="grid_footcell_field1"][data-page="mode22_print"][data-cellid="grid_footcell_field1"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field2"][data-page="mode22_print"][data-cellid="grid_footcell_field2"][data-page="mode22_print"][data-cellid="grid_footcell_field2"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field3"][data-page="mode22_print"][data-cellid="grid_footcell_field3"][data-page="mode22_print"][data-cellid="grid_footcell_field3"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field4"][data-page="mode22_print"][data-cellid="grid_footcell_field4"][data-page="mode22_print"][data-cellid="grid_footcell_field4"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field5"][data-page="mode22_print"][data-cellid="grid_footcell_field5"][data-page="mode22_print"][data-cellid="grid_footcell_field5"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field6"][data-page="mode22_print"][data-cellid="grid_footcell_field6"][data-page="mode22_print"][data-cellid="grid_footcell_field6"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field7"][data-page="mode22_print"][data-cellid="grid_footcell_field7"][data-page="mode22_print"][data-cellid="grid_footcell_field7"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field8"][data-page="mode22_print"][data-cellid="grid_footcell_field8"][data-page="mode22_print"][data-cellid="grid_footcell_field8"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field9"][data-page="mode22_print"][data-cellid="grid_footcell_field9"][data-page="mode22_print"][data-cellid="grid_footcell_field9"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field10"][data-page="mode22_print"][data-cellid="grid_footcell_field10"][data-page="mode22_print"][data-cellid="grid_footcell_field10"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field11"][data-page="mode22_print"][data-cellid="grid_footcell_field11"][data-page="mode22_print"][data-cellid="grid_footcell_field11"][data-page="mode22_print"] {
+  white-space: nowrap;
+}
+[data-page="mode22_print"][data-itemid="image"] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+[data-page="mode22_print"][data-itemid="text2"] {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="top_c3"][data-page="mode22_print"][data-cellid="top_c3"][data-page="mode22_print"][data-cellid="top_c3"][data-page="mode22_print"] {
+  color: red;
+  width:564px
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="above-grid_c1"][data-page="mode22_print"][data-cellid="above-grid_c1"][data-page="mode22_print"][data-cellid="above-grid_c1"][data-page="mode22_print"] {
+  color: red;
+  text-align:center;
+}
+/* Put  your custom CSS code here */
+
+[data-page="mode22_print"][data-itemid="print_header"] {
+  color: red;
+}
+#c{
+    margin-left:150px;
+}
+#c1{
+    
+    margin-left:70px;
+}
+#m{
+    
+    margin-left:50px;
+}
+/* Put  your custom CSS code here */
+
+[data-page="mode22_print"][data-itemid="image"] {
+  color: red;
+  margin-left:100px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-page="mode22_print"][data-itemid="text"] {
+  color: black;
+  margin-left:200px;
+  font-size:20px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-page="mode22_print"][data-itemid="text1"] {
+  color: black;
+  margin-left:10px;
+  text-align: left;
+  font-size:20px;
+  vertical-align: top;
+  margin-top:1px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-page="mode22_print"][data-itemid="text2"] {
+  color: black;
+  font-size:20px;
+}
+

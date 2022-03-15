@@ -1,0 +1,341 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel eaempassets search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN eaempassets_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_eaempassets}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="eaempassets" 
+	
+	data-signal-error-for="eaempassets{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="eaempassets" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_eaempassets}">
+		{$label eaempassets eaempassets }	</label>
+	<div class="r-search-option">
+		{$searchtype_eaempassets}
+	</div>
+	<div class="r-search-field">
+		{$eaempassets_editcontrol}	</div>
+	<div class="r-search-field">
+		{$eaempassets_editcontrol1}
+	</div>
+	
+</div>
+
+{END eaempassets_fieldblock}
+											
+{BEGIN employee_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_employee_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="employee_id" 
+	
+	data-signal-error-for="employee_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="employee_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_employee_id}">
+		{$label eaempassets employee_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_employee_id}
+	</div>
+	<div class="r-search-field">
+		{$employee_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$employee_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END employee_id_fieldblock}
+											
+{BEGIN ea_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ea_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="ea_id" 
+	
+	data-signal-error-for="ea_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="ea_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ea_id}">
+		{$label eaempassets ea_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_ea_id}
+	</div>
+	<div class="r-search-field">
+		{$ea_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ea_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END ea_id_fieldblock}
+											
+{BEGIN issued_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_issued_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="issued_date" 
+	
+	data-signal-error-for="issued_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="issued_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_issued_date}">
+		{$label eaempassets issued_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_issued_date}
+	</div>
+	<div class="r-search-field">
+		{$issued_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$issued_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END issued_date_fieldblock}
+											
+{BEGIN returned_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_returned_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="returned_date" 
+	
+	data-signal-error-for="returned_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="returned_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_returned_date}">
+		{$label eaempassets returned_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_returned_date}
+	</div>
+	<div class="r-search-field">
+		{$returned_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$returned_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END returned_date_fieldblock}
+											
+{BEGIN transfer_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transfer_date}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="transfer_date" 
+	
+	data-signal-error-for="transfer_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="transfer_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_transfer_date}">
+		{$label eaempassets transfer_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_transfer_date}
+	</div>
+	<div class="r-search-field">
+		{$transfer_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$transfer_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END transfer_date_fieldblock}
+											
+{BEGIN asset_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_asset_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="asset_id" 
+	
+	data-signal-error-for="asset_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="asset_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_asset_id}">
+		{$label eaempassets asset_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_asset_id}
+	</div>
+	<div class="r-search-field">
+		{$asset_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$asset_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END asset_id_fieldblock}
+											
+{BEGIN transaction_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_transaction}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="transaction" 
+	
+	data-signal-error-for="transaction{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="transaction" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_transaction}">
+		{$label eaempassets transaction }	</label>
+	<div class="r-search-option">
+		{$searchtype_transaction}
+	</div>
+	<div class="r-search-field">
+		{$transaction_editcontrol}	</div>
+	<div class="r-search-field">
+		{$transaction_editcontrol1}
+	</div>
+	
+</div>
+
+{END transaction_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

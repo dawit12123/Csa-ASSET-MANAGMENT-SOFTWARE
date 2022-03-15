@@ -1,0 +1,376 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel request_info view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN rq_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rq_id}  r-vertical-field" data-fieldname="rq_id" data-signal-error-for="rq_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="rq_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_rq_id}">
+		
+		{BEGIN rq_id_label}{$label request_info rq_id }{END rq_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$rq_id_value}	</div>
+
+		
+</div>
+
+
+{END rq_id_fieldblock}
+											
+{BEGIN employee_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_employee_id}  r-vertical-field" data-fieldname="employee_id" data-signal-error-for="employee_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="employee_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_employee_id}">
+		
+		{BEGIN employee_id_label}{$label request_info employee_id }{END employee_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$employee_id_value}	</div>
+
+		
+</div>
+
+
+{END employee_id_fieldblock}
+											
+{BEGIN asset_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_asset_id}  r-vertical-field" data-fieldname="asset_id" data-signal-error-for="asset_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="asset_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_asset_id}">
+		
+		{BEGIN asset_id_label}{$label request_info asset_id }{END asset_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$asset_id_value}	</div>
+
+		
+</div>
+
+
+{END asset_id_fieldblock}
+											
+{BEGIN model_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_model}  r-vertical-field" data-fieldname="model" data-signal-error-for="model{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="model" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_model}">
+		
+		{BEGIN model_label}{$label request_info model }{END model_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$model_value}	</div>
+
+		
+</div>
+
+
+{END model_fieldblock}
+											
+{BEGIN quantity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_quantity}  r-vertical-field" data-fieldname="quantity" data-signal-error-for="quantity{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="quantity" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_quantity}">
+		
+		{BEGIN quantity_label}{$label request_info quantity }{END quantity_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$quantity_value}	</div>
+
+		
+</div>
+
+
+{END quantity_fieldblock}
+											
+{BEGIN approve_status_from_dept_manager_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approve_status_from_dept_manager}  r-vertical-field" data-fieldname="approve_status_from_dept_manager" data-signal-error-for="approve_status_from_dept_manager{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="approve_status_from_dept_manager" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_approve_status_from_dept_manager}">
+		
+		{BEGIN approve_status_from_dept_manager_label}{$label request_info approve_status_from_dept_manager }{END approve_status_from_dept_manager_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$approve_status_from_dept_manager_value}	</div>
+
+		
+</div>
+
+
+{END approve_status_from_dept_manager_fieldblock}
+											
+{BEGIN date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date}  r-vertical-field" data-fieldname="date" data-signal-error-for="date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="date" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_date}">
+		
+		{BEGIN date_label}{$label request_info date }{END date_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$date_value}	</div>
+
+		
+</div>
+
+
+{END date_fieldblock}
+											
+{BEGIN department_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_department}  r-vertical-field" data-fieldname="department" data-signal-error-for="department{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="department" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_department}">
+		
+		{BEGIN department_label}{$label request_info department }{END department_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$department_value}	</div>
+
+		
+</div>
+
+
+{END department_fieldblock}
+											
+{BEGIN taked_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_taked}  r-vertical-field" data-fieldname="taked" data-signal-error-for="taked{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="taked" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_taked}">
+		
+		{BEGIN taked_label}{$label request_info taked }{END taked_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$taked_value}	</div>
+
+		
+</div>
+
+
+{END taked_fieldblock}
+											
+{BEGIN approve_status_from_asset_dept_manager_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_approve_status_from_asset_dept_manager}  r-vertical-field" data-fieldname="approve_status_from_asset_dept_manager" data-signal-error-for="approve_status_from_asset_dept_manager{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="approve_status_from_asset_dept_manager" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_approve_status_from_asset_dept_manager}">
+		
+		{BEGIN approve_status_from_asset_dept_manager_label}{$label request_info approve_status_from_asset_dept_manager }{END approve_status_from_asset_dept_manager_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$approve_status_from_asset_dept_manager_value}	</div>
+
+		
+</div>
+
+
+{END approve_status_from_asset_dept_manager_fieldblock}
+											
+{BEGIN seen_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_seen}  r-vertical-field" data-fieldname="seen" data-signal-error-for="seen{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="seen" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_seen}">
+		
+		{BEGIN seen_label}{$label request_info seen }{END seen_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$seen_value}	</div>
+
+		
+</div>
+
+
+{END seen_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$edit_page_button_attrs}  title="" >
+				
+		{mlang_message EDIT}		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

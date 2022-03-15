@@ -1,0 +1,542 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel employee view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}	
+				 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN photo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_photo}  r-vertical-field" data-fieldname="photo" data-signal-error-for="photo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="photo" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_photo}">
+		
+		{BEGIN photo_label}{$label employee photo }{END photo_label}
+	</label>
+	<div class="" >
+		{$photo_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END photo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-vertical-field" data-fieldname="id" data-signal-error-for="id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_id}">
+		
+		{BEGIN id_label}{$label employee id }{END id_label}
+	</label>
+	<div class="" >
+		{$id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END id_fieldblock}
+											
+{BEGIN firstname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_firstname}  r-vertical-field" data-fieldname="firstname" data-signal-error-for="firstname{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="firstname" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_firstname}">
+		
+		{BEGIN firstname_label}{$label employee firstname }{END firstname_label}
+	</label>
+	<div class="" >
+		{$firstname_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END firstname_fieldblock}
+											
+{BEGIN lastname_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_lastname}  r-vertical-field" data-fieldname="lastname" data-signal-error-for="lastname{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="lastname" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_lastname}">
+		
+		{BEGIN lastname_label}{$label employee lastname }{END lastname_label}
+	</label>
+	<div class="" >
+		{$lastname_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END lastname_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" data-fieldname="email" data-signal-error-for="email{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="email" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_email}">
+		
+		{BEGIN email_label}{$label employee email }{END email_label}
+	</label>
+	<div class="" >
+		{$email_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN phone_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_phone}  r-vertical-field" data-fieldname="phone" data-signal-error-for="phone{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="phone" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_phone}">
+		
+		{BEGIN phone_label}{$label employee phone }{END phone_label}
+	</label>
+	<div class="" >
+		{$phone_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END phone_fieldblock}
+											
+{BEGIN hire_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hire_date}  r-vertical-field" data-fieldname="hire_date" data-signal-error-for="hire_date{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="hire_date" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_hire_date}">
+		
+		{BEGIN hire_date_label}{$label employee hire_date }{END hire_date_label}
+	</label>
+	<div class="" >
+		{$hire_date_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END hire_date_fieldblock}
+											
+{BEGIN house_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_house_no}  r-vertical-field" data-fieldname="house_no" data-signal-error-for="house_no{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="house_no" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_house_no}">
+		
+		{BEGIN house_no_label}{$label employee house_no }{END house_no_label}
+	</label>
+	<div class="" >
+		{$house_no_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END house_no_fieldblock}
+											
+{BEGIN salary_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_salary}  r-vertical-field" data-fieldname="salary" data-signal-error-for="salary{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="salary" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_salary}">
+		
+		{BEGIN salary_label}{$label employee salary }{END salary_label}
+	</label>
+	<div class="" >
+		{$salary_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END salary_fieldblock}
+											
+{BEGIN job_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_job_id}  r-vertical-field" data-fieldname="job_id" data-signal-error-for="job_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="job_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_job_id}">
+		
+		{BEGIN job_id_label}{$label employee job_id }{END job_id_label}
+	</label>
+	<div class="" >
+		{$job_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END job_id_fieldblock}
+											
+{BEGIN workunit_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_workunit_id}  r-vertical-field" data-fieldname="workunit_id" data-signal-error-for="workunit_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="workunit_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_workunit_id}">
+		
+		{BEGIN workunit_id_label}{$label employee workunit_id }{END workunit_id_label}
+	</label>
+	<div class="" >
+		{$workunit_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END workunit_id_fieldblock}
+											
+{BEGIN status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_status}  r-vertical-field" data-fieldname="status" data-signal-error-for="status{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="status" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_status}">
+		
+		{BEGIN status_label}{$label employee status }{END status_label}
+	</label>
+	<div class="" >
+		{$status_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END status_fieldblock}
+											
+{BEGIN manager_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_manager_id}  r-vertical-field" data-fieldname="manager_id" data-signal-error-for="manager_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="manager_id" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_manager_id}">
+		
+		{BEGIN manager_id_label}{$label employee manager_id }{END manager_id_label}
+	</label>
+	<div class="" >
+		{$manager_id_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END manager_id_fieldblock}
+											
+{BEGIN department_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_department}  r-vertical-field" data-fieldname="department" data-signal-error-for="department{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="department" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_department}">
+		
+		{BEGIN department_label}{$label employee department }{END department_label}
+	</label>
+	<div class="" >
+		{$department_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END department_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+																</tbody></table>
+				
+{BEGIN details_model19fromemployee}
+<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption model19fromemployee }				
+							<span>
+					{$detailslButtons_model19fromemployee}
+																																										</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_model19fromemployee}
+		</div>
+	</div>
+</div>
+{END details_model19fromemployee}
+											
+{BEGIN details_jobhistory}
+<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption jobhistory }				
+							<span>
+					{$detailslButtons_jobhistory}
+																																										</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_jobhistory}
+		</div>
+	</div>
+</div>
+{END details_jobhistory}
+											
+{BEGIN details_eaempassets}
+<div data-itemtype="details_preview" data-itemid="details_preview2" {$item_details_preview2} data-pageid="{$pageid}" class="bs-details"> 
+	<div class="panel panel-info details-grid">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+							{$caption eaempassets }				
+							<span>
+					{$detailslButtons_eaempassets}
+																																										</span>
+			</h4>
+		</div>
+		<div class="panel-body">
+			{$displayDetailTable_eaempassets}
+		</div>
+	</div>
+</div>
+{END details_eaempassets}
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$edit_page_button_attrs}  title="" >
+				
+		{mlang_message EDIT}		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

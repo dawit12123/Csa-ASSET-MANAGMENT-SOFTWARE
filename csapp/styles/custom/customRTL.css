@@ -1,0 +1,109 @@
+
+body {
+height:100%;
+background:blue url("/images/csalogo(3).png") no-repeat center center fixed ;
+background-size:100% 100%;
+ position: absolute;
+   top:0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: #FFFFA0;
+   opacity: 0.9;
+:blue;
+
+  
+}
+.bs-pagepanel {
+
+background: rgba(17,17,17,0.15) !important;
+
+}d: rgba(17,17,17,0.15) !important;
+}
+.panel-primary > div.panel-heading {
+background: #808080; 
+}
+#form_grid_1{
+color: blue;
+}
+thead{
+background-color: #FBFBFB;
+   background: linear-gradient(to top, #FBFBFB 0%, #E6E6E6 100%);
+
+
+}
+
+#form_supertop_1{
+background-color: #FFF2CC;
+   background: linear-gradient(to top, #FFF2CC 0%, #FFC000 100%);
+color:#57C0FF;
+
+}
+
+.r-vbar-page .r-left [data-logo-cell][data-logo-cell]{
+font-size: 20px;
+}
+#form_grid_1 {
+    color: blue;
+        background-color: #e5e5e5;
+}
+.mCustomScrollBox {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+b, strong {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.r-vbar-page .r-left .nav li, .r-vbar-page .r-left .nav ul{
+
+
+background: linear-gradient(to top, rgba(255,255,255,0.96) 0%, #80FF00 100%);
+}
+.r-edit-form .r-integrated-field.form-group.form-group{
+margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: auto;
+  background: linear-gradient(to top, #FFFFFF 0%, #F2F2F2 100%);
+
+
+}
+.r-edit-form .r-integrated-field.form-group.form-group{
+margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    background: linear-gradient(to top, #FFFFFF 0%, #D8D8D8 100%);
+}
+.r-edit-form > * > tr > [data-cellid] {
+    vertical-align: top;
+    margin-bottom: auto;
+    border: mediumaquamarine;
+    border-width: thick;
+}
+.panel-body {
+    padding: 15px;
+    background-image: url(../../../../images/csalogo.png);
+    background-repeat: no-repeat;
+background-color: #FFFFFF;
+}
+#form_grid_1 {
+    color: blue;
+    background-color:transparent;
+}
+#c{
+    margin-left:150px;
+}
+#c1{
+    
+    margin-left:70px;
+}
+#m{
+    
+    margin-left:50px;
+}

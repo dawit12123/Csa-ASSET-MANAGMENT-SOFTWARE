@@ -1,0 +1,28 @@
+
+/* Put  your custom CSS code here */
+
+[data-cellid="grid_c3"][data-page="model20_add"][data-cellid="grid_c3"][data-page="model20_add"][data-cellid="grid_c3"][data-page="model20_add"] {
+  color: red;
+  
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="grid_c"][data-page="model20_add"][data-cellid="grid_c"][data-page="model20_add"][data-cellid="grid_c"][data-page="model20_add"] {
+  color: red;
+  
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="grid_c4"][data-page="model20_add"][data-cellid="grid_c4"][data-page="model20_add"][data-cellid="grid_c4"][data-page="model20_add"] {
+  color: red;
+  
+}
+/* Put  your custom CSS code here */
+
+[data-page="model20_add"][data-itemid="integrated_edit_field2"] {
+  color: red;
+  visibility:hidden
+}
+
